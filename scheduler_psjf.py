@@ -67,7 +67,7 @@ class PredictedSJF:
 
 
         # Print scheduling metrics
-        print(f"\n=== {model_type} Scheduling Metrics ===")
+        print(f"\n=== SFJ- {model_type} Scheduling Metrics ===")
         print("==================================================")
         print(f"avg_waiting_time         : {avg_wait_time:.2f}")
         print(f"avg_turnaround_time      : {avg_turnaround_time:.2f}")
