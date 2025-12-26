@@ -4,5 +4,21 @@
 2025-12-26 12:09:20,020 - Best parameters for xgboost: {'alpha': 0.2, 'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'reg_lambda': 0.1, 'subsample': 0.8}
 2025-12-26 12:13:18,002 - Best parameters for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 100}
 2025-12-26 12:14:19,432 - Best parameters for xgboost: {'alpha': 0.1, 'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 200, 'reg_lambda': 0.1, 'subsample': 0.8}
+<<<<<<< HEAD
 2025-12-26 13:25:09,455 - Best parameters for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 100}
 2025-12-26 13:25:24,037 - Best parameters for xgboost: {'alpha': 0, 'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'reg_lambda': 0.2, 'subsample': 0.8}
+=======
+2025-12-26 13:11:51,169 - Best parameters for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 100}
+2025-12-26 13:12:53,299 - Best parameters for xgboost: {'alpha': 0.1, 'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 200, 'reg_lambda': 0.1, 'subsample': 0.8}
+2025-12-26 13:16:06,714 - Best parameters for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 100}
+2025-12-26 13:17:32,448 - Best parameters for xgboost: {'alpha': 0.1, 'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 200, 'reg_lambda': 0.1, 'subsample': 0.8}
+2025-12-26 13:49:00,953 - Best parameters for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 100}
+2025-12-26 13:50:09,973 - Best parameters for xgboost: {'alpha': 0.1, 'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 200, 'reg_lambda': 0.1, 'subsample': 0.8}
+2025-12-26 14:33:40,494 - Best parameters for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 100}
+2025-12-26 14:34:41,690 - Best parameters for xgboost: {'alpha': 0.2, 'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 200, 'reg_lambda': 0.2, 'subsample': 0.8}
+2025-12-26 14:38:32,044 - Best parameters for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-26 14:41:36,675 - Best parameters for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-26 14:42:49,434 - Best parameters for xgboost: {'alpha': 0, 'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'reg_lambda': 0.2, 'subsample': 1.0}
+2025-12-26 14:44:15,168 - Best parameters for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 100}
+2025-12-26 14:45:04,861 - Best parameters for xgboost: {'alpha': 0.1, 'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 200, 'reg_lambda': 0.1, 'subsample': 0.8}
+>>>>>>> 6294495033aa17b8d79b7baff5099eec689bd78d
