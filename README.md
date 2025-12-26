@@ -82,7 +82,7 @@ Ensure that you have the following Python libraries installed:
 - `scikit-learn`
 - `xgboost`
 - `joblib`
-- `tqdm`  # For progress bars
+- `tqdm`  
 - `logging` 
 - `heapq` 
 
