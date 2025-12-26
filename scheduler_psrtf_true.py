@@ -155,7 +155,7 @@ if __name__ == "__main__":
     loader.display_jobs_info()
 
     scheduler = SRTFTrue()
-    print("\n=== Using True Runtime Scheduling (SRTF-TRUE Baseline) ===")
+    print("\n=== Using True Runtime Scheduling (SRTF-TRUE) ===")
     scheduler.schedule(test_jobs)
 
     total_runtime = sum(j.true_runtime for j in test_jobs)
