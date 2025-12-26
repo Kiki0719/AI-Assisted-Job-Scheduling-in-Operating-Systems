@@ -14,7 +14,6 @@ This project aims to enhance job scheduling in operating systems using machine l
 
 ## File Structure
 
-
 ### 1. **data_loader.py**
    - Loads the job data from CSV files and processes them into job objects.
 
