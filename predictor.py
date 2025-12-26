@@ -84,7 +84,7 @@ class RuntimePredictor:
                 n_estimators=100,          # Number of trees
                 max_depth=5,               # Maximum depth of trees to reduce overfitting
                 random_state=random_state,
-                objective="reg:squarederror",  # Regression task
+                objective="reg:squarederror", 
                 alpha=0.3,                    # L1 regularization (increases regularization strength)
                 reg_lambda=0.3,              # L2 regularization (increases regularization strength)
                 eta=0.1,                      # Learning rate controls model complexity

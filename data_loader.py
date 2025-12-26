@@ -82,14 +82,11 @@ class JobLoader:
                   f"{job.batch_size:9.2f} | {job.dataset_size:11.2f} | {job.epochs:6} | "
                   f"{job.uses_gpu:3} | {job.true_runtime:12.2f}")
 
-# Example usage
 if __name__ == "__main__":
     loader = JobLoader()
-    
-    # Load training data
+
     train_jobs = loader.load_jobs_from_csv("training_jobs.csv")
     loader.display_jobs_info()
-    
-    # Load test data
+
     test_jobs = loader.load_jobs_from_csv("testing_jobs.csv")
     loader.display_jobs_info()

@@ -35,7 +35,7 @@ class PredictedSJF:
 
             # If there are jobs in the queue, schedule the one with the shortest predicted runtime
             if self.queue:
-                _, job = heapq.heappop(self.queue)  # Get the job with the shortest predicted runtime
+                _, job = heapq.heappop(self.queue) 
 
                 # Calculate waiting time = current time - job arrival time
                 wait_time = self.time - job.arrive_time
@@ -78,10 +78,9 @@ class PredictedSJF:
 
 
 if __name__ == "__main__":
-    # Load job data from CSV
     loader = JobLoader()
-    test_jobs = loader.load_jobs_from_csv("testing_jobs.csv")  # Load testing jobs from CSV
-    loader.display_jobs_info()  # Display job info for debugging
+    test_jobs = loader.load_jobs_from_csv("testing_jobs.csv")  
+    loader.display_jobs_info() 
     
     # Load trained runtime predictor (both random forest and XGBoost models)
     predictor = RuntimePredictor(model_types=["random_forest", "xgboost"])
@@ -90,9 +89,9 @@ if __name__ == "__main__":
     # Create and run Predicted-SJF scheduler using random forest model
     scheduler_rf = PredictedSJF(predictor)
     print("\n=== Using Random Forest Model ===")
-    scheduler_rf.schedule(test_jobs, model_type="random_forest")  # Schedule using Random Forest model
+    scheduler_rf.schedule(test_jobs, model_type="random_forest") 
     
     # Create and run Predicted-SJF scheduler using XGBoost model
     scheduler_xgb = PredictedSJF(predictor)
     print("\n=== Using XGBoost Model ===")
-    scheduler_xgb.schedule(test_jobs, model_type="xgboost")  # Schedule using XGBoost model
+    scheduler_xgb.schedule(test_jobs, model_type="xgboost")  

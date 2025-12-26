@@ -24,7 +24,6 @@ class PredictedSJF:
             # Add all jobs that have arrived by the current time to the queue
             while jobs and jobs[0].arrive_time <= self.time:
                 job = jobs.pop(0)  # Pop the first job that has arrived
-                # Directly use the true runtime (no prediction)
                 job.predicted_runtime = job.true_runtime  # Set predicted runtime to true runtime
                 heapq.heappush(self.queue, (job.predicted_runtime, job))  # Add job to queue based on true runtime
 
@@ -51,7 +50,6 @@ class PredictedSJF:
                 min_waiting_time = min(min_waiting_time, wait_time)
 
             else:
-                # If no jobs are in the queue, jump to the next job arrival time
                 if jobs:
                     self.time = jobs[0].arrive_time
 
@@ -59,8 +57,6 @@ class PredictedSJF:
         avg_wait_time = sum(waiting_times) / len(waiting_times) if waiting_times else 0
         avg_turnaround_time = sum(turnaround_times) / len(turnaround_times) if turnaround_times else 0
 
-        # Calculate throughput as jobs completed divided by total time
-        throughput = throughput / self.time if self.time > 0 else 0
 
         # Print scheduling metrics
         print(f"\n=== Scheduling Metrics ===")
@@ -74,12 +70,10 @@ class PredictedSJF:
 
 
 if __name__ == "__main__":
-    # Load job data from CSV
     loader = JobLoader()
-    test_jobs = loader.load_jobs_from_csv("testing_jobs.csv")  # Load testing jobs from CSV
-    loader.display_jobs_info()  # Display job info for debugging
+    test_jobs = loader.load_jobs_from_csv("testing_jobs.csv")  
+    loader.display_jobs_info()  
     
-    # Create and run Predicted-SJF scheduler (now without AI models)
     scheduler = PredictedSJF()
     print("\n=== Using True Runtime Scheduling ===")
-    scheduler.schedule(test_jobs)  # Schedule using true runtime
+    scheduler.schedule(test_jobs) 
